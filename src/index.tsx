@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Parent from './props/Parent';
+// import GuestList from './state/GuestList';
+import UserSearch from './state/UserSearch';
 
 const el = document.getElementById("root");
 const root = ReactDOM.createRoot(el!);
 
 root.render(
   <React.StrictMode>
-    <Parent />
+    <UserSearch />
   </React.StrictMode>
 );
 
