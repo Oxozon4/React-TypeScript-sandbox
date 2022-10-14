@@ -18,14 +18,16 @@ const UserSearch: React.FC = () => {
         setUser(foundUser);
     };
 
-    return <div>
-        User Search
-        <input value={name} onChange={(e) => setName(e.target.value)} />
-        <button onClick={onClick}>Find user</button>
+    return (
         <div>
-            {user && user.name}, {user && user.age}
+            User Search
+            <input value={name} onChange={(e) => setName(e.target.value)} />
+            <button onClick={onClick}>Find user</button>
+            <div>
+                {user && user.name}, {user && user.age}
+            </div>
         </div>
-    </div>
+    );
 };
 
 export default UserSearch;
